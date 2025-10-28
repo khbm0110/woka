@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext';
-import { NotificationProvider } from './context/NotificationContext';
-import { SiteSettingsProvider } from './context/SiteSettingsContext';
-import { LanguageProvider, useLanguage } from './context/LanguageContext';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
-import HomePage from './views/HomePage';
-import ProjectsPage from './views/ProjectsPage';
-import DashboardPage from './views/DashboardPage';
-import AuthPage from './views/AuthPage';
-import ProjectDetailsView from './views/ProjectDetailsView';
-import ProtectedRoute from './components/auth/ProtectedRoute';
-import { UserRole } from './types';
-import DepositPage from './views/DepositPage';
-import WithdrawPage from './views/WithdrawPage'; // Import new view
-import RegisterRoleSelectionPage from './views/RegisterRoleSelectionPage';
-import RegisterPage from './views/RegisterPage';
-import PhoneVerificationPage from './views/PhoneVerificationPage';
-import VerificationPage from './views/VerificationPage';
-import ProjectOwnerManageProjectView from './views/ProjectOwnerManageProjectView';
-import MobileApp from './mobile_app/MobileApp';
-import ServicesPage from './views/ServicesPage';
-import ContactPage from './views/ContactPage';
+import { AuthProvider } from './context/AuthContext.tsx';
+import { NotificationProvider } from './context/NotificationContext.tsx';
+import { SiteSettingsProvider } from './context/SiteSettingsContext.tsx';
+import { LanguageProvider, useLanguage } from './context/LanguageContext.tsx';
+import Header from './components/layout/Header.tsx';
+import Footer from './components/layout/Footer.tsx';
+import HomePage from './views/HomePage.tsx';
+import ProjectsPage from './views/ProjectsPage.tsx';
+import DashboardPage from './views/DashboardPage.tsx';
+import AuthPage from './views/AuthPage.tsx';
+import ProjectDetailsView from './views/ProjectDetailsView.tsx';
+import ProtectedRoute from './components/auth/ProtectedRoute.tsx';
+import { UserRole } from './types.ts';
+import DepositPage from './views/DepositPage.tsx';
+import WithdrawPage from './views/WithdrawPage.tsx'; // Import new view
+import RegisterRoleSelectionPage from './views/RegisterRoleSelectionPage.tsx';
+import RegisterPage from './views/RegisterPage.tsx';
+import PhoneVerificationPage from './views/PhoneVerificationPage.tsx';
+import VerificationPage from './views/VerificationPage.tsx';
+import ProjectOwnerManageProjectView from './views/ProjectOwnerManageProjectView.tsx';
+import MobileApp from './mobile_app/MobileApp.tsx';
+import ServicesPage from './views/ServicesPage.tsx';
+import ContactPage from './views/ContactPage.tsx';
 
 
 function AppContent() {
