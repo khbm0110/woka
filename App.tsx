@@ -129,15 +129,17 @@ function AppContent() {
 
 function App() {
   return (
-    <AuthProvider>
-      <NotificationProvider>
-        <SiteSettingsProvider>
-          <HashRouter>
-            <AppContent />
-          </HashRouter>
-        </SiteSettingsProvider>
-      </NotificationProvider>
-    </AuthProvider>
+    <LanguageProvider>
+      <AuthProvider>
+        <NotificationProvider>
+          <SiteSettingsProvider>
+            <HashRouter>
+              <AppContent />
+            </HashRouter>
+          </SiteSettingsProvider>
+        </NotificationProvider>
+      </AuthProvider>
+    </LanguageProvider>
   );
 }
 
